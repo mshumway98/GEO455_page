@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS conflicts</title>
+        <style>
+            * { font-family: Arial, Verdana, sans-serif; }
+            h1 { font-family: "Courier New", monospace; }
+            i { color: green; }
+            i { color: red; }
+            b { color: pink; }
+            p b { color: blue; }
+            #intro { font-size: 100%; }
+            p { font-size: 75%; }
+        </style>
+    </head>
+    <body>
+        <h1>This is a first-level heading</h1>
+        <p id="intro">This is the <i>introduction</i> paragraph. It has an <b>'id' attribute with the value of "intro"</b>. It is styled differently from all other paragraphs, using a CSS rule with an <i>ID Selector</i>.</p>
+        <p>This is the <i>second</i> paragraph. It <b>does not</b> have an 'id' attribute.</p>
+        <p>I hope to learn as much as I can in this class so that I can make an awesome webmap at the end of class for my final project. I have not looked at the final project instructions but I have a friend who travels and is a great photographer. It would be cool to make a webmap that she can upload her photos to and it shows exactly where the photo was taken on a world map.</p>
+        <p>This is the <i>third</i> paragraph. It <b>also does not</b> have an 'id' attribute.</p>
+        <p>This is a <i>fourth</i> paragraph that I have created just to tell you to <b>HAVE A GREAT DAY!</b></p>
+    </body>
+</html>
