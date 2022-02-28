@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-
     <h2>JavaScript Flow Controls</h2>
-
     <p id="good_day"></p>
     <p id="good_eve"></p>
     <p id="good_all"></p>
-
-
-
     <script>
-        
         var hour= new Date().getHours() //returns the hour (0 to 23) of the current time.
-        var greeting ; 
-        
+        var greeting ;   
         if (hour < 18) {
             greeting = "Good day!";
         }
-        document.getElementById("good_day").innerHTML = greeting;
-        
+        document.getElementById("good_day").innerHTML = greeting; 
         if (hour < 16) {// change the hour values based on the current time.
             greeting = "Wonderful Day!";
         } else {
@@ -34,13 +26,7 @@
         } else {
             greeting = "Good Evening!";
         }
-        document.getElementById("good_all").innerHTML = greeting;
-        
-        
-
-    
-
+        document.getElementById("good_all").innerHTML = greeting; 
     </script>
-
 </body>
 </html>
