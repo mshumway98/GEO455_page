@@ -65,7 +65,7 @@ wildfireRisk.bindPopup(function (error, featureCollection) {
 
 var overlays = {
     'Widlfire':wildfireRisk,
-    "<img src='img/icon.png' height=20> Major Cities": cities};
+    "<img src='red_marker.png' height=20> Major Cities": cities};
 
 
 //Creating the menu
