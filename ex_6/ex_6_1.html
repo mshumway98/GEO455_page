@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <title>Ex- 6-1: DOM manipulation</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            $("p:first").css('background-color', 'orange');
+         });
+     
+        $(document).ready(function() {
+            $("button").click(function(){
+                $("ul").css('color', 'purple' );
+            });
+         });
+           var design = {
+        color: "white",
+        background: "grey",
+        border: "3px solid black"
+        }
+      </script>
+   </head>
+
+   <body>
+       <h1> Webmapping: Spring 2022</h1>
+       <p> Technologies we learned </p>
+       <ul>
+           <li> HTML </li>
+           <li> CSS </li>
+           <li> JavaScript </li>
+           <li> jQuery </li>
+       </ul>
+       
+       <p id="test">Check console to get the text for list</p> 
+       <button>Change list text above to purple</button>
+       <ol>
+        <li>Pineapples</li>
+        <li>Apples</li>
+        <li>Watermelon</li>
+        <li>Raspberries</li>
+        <li>Mangos</li>
+       </ol>
+    </body>
+</html>
